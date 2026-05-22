@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>УралТехЦентр — Автосервис в Нижнем Тагиле</title>
+  <meta name="description" content="Профессиональный автосервис УралТехЦентр в Нижнем Тагиле. Диагностика, ремонт, сход-развал, кузовные работы. Работаем ежедневно 09:00–21:00." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="УралТехЦентр — Современный автосервис" class="logo__img" />
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active">Главная</a></li>
+          <li><a href="services.html" class="nav__link">Услуги</a></li>
+          <li><a href="about.html" class="nav__link">О нас</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+          <li><a href="https://razbor66-nt.ru" target="_blank" class="nav__link nav__link--shop">Магазин запчастей</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__contacts">
+        <a href="tel:+73435483512" class="header__phone">8 (3435) 48-35-12</a>
+        <a href="contacts.html" class="btn btn--small">Записаться</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ГЕРОЙ -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge animate-up">
+          <span class="badge__dot"></span>
+          Работаем ежедневно 09:00–21:00
+        </div>
+        <h1 class="hero__title animate-up delay-1">
+          Автосервис,<br/>которому<br/><span class="hero__title--accent">доверяют</span>
+        </h1>
+        <p class="hero__subtitle animate-up delay-2">
+          Профессиональный ремонт любых марок автомобилей.<br/>
+          Оборудование BOSCH. Гарантия на все работы.
+        </p>
+        <div class="hero__actions animate-up delay-3">
+          <a href="contacts.html" class="btn btn--primary btn--large">Записаться на ремонт</a>
+          <a href="services.html" class="btn btn--outline btn--large">Наши услуги</a>
+        </div>
+        <div class="hero__stats animate-up delay-4">
+          <div class="hero__stat">
+            <span class="stat__num" data-count="16">0</span>
+            <span class="stat__unit">+</span>
+            <span class="stat__label">лет работы</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="stat__num" data-count="12000">0</span>
+            <span class="stat__unit">+</span>
+            <span class="stat__label">клиентов</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="stat__num" data-count="30">0</span>
+            <span class="stat__unit">+</span>
+            <span class="stat__label">видов работ</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual animate-right delay-2">
+        <div class="hero__car-wrap">
+          <svg class="hero__car" viewBox="0 0 520 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Скоростные линии -->
+            <line x1="2"  y1="142" x2="78" y2="142" stroke="#0a1a2e" stroke-width="2.5" stroke-linecap="round" opacity="0.15"/>
+            <line x1="0"  y1="155" x2="78" y2="155" stroke="#0a1a2e" stroke-width="1.5" stroke-linecap="round" opacity="0.10"/>
+            <line x1="6"  y1="167" x2="78" y2="167" stroke="#0a1a2e" stroke-width="1"   stroke-linecap="round" opacity="0.07"/>
+
+            <!-- Тень под машиной -->
+            <ellipse cx="290" cy="202" rx="165" ry="8" fill="#0a1a2e" opacity="0.12"/>
+
+            <!-- ТЁМНЫЙ СИЛУЭТ BMW M6 — кузов -->
+            <path d="
+              M100 195 C100 195 100 183 103 179 C106 175 112 174 119 174 L160 174
+              C167 174 174 157 188 144 C202 131 220 122 250 115
+              C280 108 312 105 344 105 C376 105 404 108 426 117
+              C448 126 462 139 470 153 C474 160 476 174 476 174
+              L 508 174 C517 174 526 178 530 185 C534 192 532 198 526 200
+              L 476 200
+              C 472 210 462 217 450 217 C438 217 428 210 424 200
+              L 262 200
+              C 258 210 248 217 236 217 C224 217 214 210 210 200
+              L 119 200 C109 200 100 198 100 195 Z
+            " fill="#1a2e42"/>
+
+            <!-- Крыша — чуть светлее для объёма -->
+            <path d="
+              M160 174 C167 174 174 157 188 144 C202 131 220 122 250 115
+              C280 108 312 105 344 105 C376 105 404 108 426 117
+              C448 126 462 139 470 153 C474 160 476 174 476 174 Z
+            " fill="#243852"/>
+
+            <!-- Стёкла — голубые -->
+            <path d="
+              M168 171 C176 153 194 139 220 130 C246 121 284 117 320 116
+              C356 116 386 121 408 131 C430 141 442 155 446 169 L446 171 Z
+            " fill="#b8d8f0" opacity="0.9"/>
+
+            <!-- Стойка B -->
+            <rect x="332" y="105" width="10" height="69" rx="2" fill="#0f1e2e" opacity="0.55"/>
+
+            <!-- Линия подоконника -->
+            <path d="M164 174 Q343 169 474 174" stroke="#2a4a6a" stroke-width="1.2" fill="none" opacity="0.5"/>
+
+            <!-- Ручки дверей -->
+            <rect x="276" y="183" width="22" height="5" rx="2.5" fill="#4a7aaa" opacity="0.6"/>
+            <rect x="388" y="183" width="22" height="5" rx="2.5" fill="#4a7aaa" opacity="0.6"/>
+
+            <!-- Зеркало -->
+            <path d="M438 142 Q450 137 458 141 L456 152 Q447 154 438 149Z" fill="#1a2e42" stroke="#2a4a6a" stroke-width="1"/>
+
+            <!-- Фара LED -->
+            <path d="M502 177 Q522 172 532 177 L530 186 Q516 189 502 185Z" fill="#fffef5" opacity="0.95"/>
+            <line x1="506" y1="181" x2="528" y2="181" stroke="#ffd740" stroke-width="1.8" opacity="0.8"/>
+
+            <!-- Задний фонарь L-образный -->
+            <path d="M100 177 L107 174 L115 174 L115 183 L107 186Z" fill="#ff4444"/>
+            <rect x="100" y="181" width="7" height="14" rx="1" fill="#ff4444"/>
+
+            <!-- Решётка BMW ноздри -->
+            <path d="M502 186 Q518 183 530 186 L530 194 Q518 197 502 194Z" fill="#0f1e2e" stroke="#2a4a6a" stroke-width="1"/>
+            <line x1="516" y1="184" x2="516" y2="196" stroke="#2a4a6a" stroke-width="1" opacity="0.6"/>
+
+            <!-- Передний бампер -->
+            <path d="M500 192 Q526 190 534 184 L534 198 Q528 202 500 200Z" fill="#1a2e42"/>
+
+            <!-- Выхлоп двойной -->
+            <ellipse cx="128" cy="197" rx="7" ry="4" fill="#2a4a6a" stroke="#3a5a7a" stroke-width="1"/>
+            <ellipse cx="142" cy="197" rx="7" ry="4" fill="#2a4a6a" stroke="#3a5a7a" stroke-width="1"/>
+
+            <!-- Заднее колесо -->
+            <circle cx="236" cy="200" r="27" fill="#0a1422" stroke="#2a4a6a" stroke-width="2"/>
+            <circle cx="236" cy="200" r="19" fill="#162030" stroke="#3a6a9a" stroke-width="1.5"/>
+            <circle cx="236" cy="200" r="10" fill="#d8eaf8" stroke="#4a8abf" stroke-width="1.5"/>
+            <circle cx="236" cy="200" r="3.5" fill="#1e6ec8"/>
+            <line x1="236" y1="190" x2="236" y2="197" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="236" y1="203" x2="236" y2="210" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="226" y1="200" x2="233" y2="200" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="239" y1="200" x2="246" y2="200" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="228" y1="192" x2="233" y2="196" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <line x1="239" y1="204" x2="244" y2="208" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <line x1="244" y1="192" x2="239" y2="196" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <line x1="233" y1="204" x2="228" y2="208" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <!-- Синий суппорт -->
+            <path d="M226 192 Q229 188 233 190 L231 196 Q227 196 225 193Z" fill="#1565c0" opacity="0.8"/>
+
+            <!-- Переднее колесо -->
+            <circle cx="450" cy="200" r="27" fill="#0a1422" stroke="#2a4a6a" stroke-width="2"/>
+            <circle cx="450" cy="200" r="19" fill="#162030" stroke="#3a6a9a" stroke-width="1.5"/>
+            <circle cx="450" cy="200" r="10" fill="#d8eaf8" stroke="#4a8abf" stroke-width="1.5"/>
+            <circle cx="450" cy="200" r="3.5" fill="#1e6ec8"/>
+            <line x1="450" y1="190" x2="450" y2="197" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="450" y1="203" x2="450" y2="210" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="440" y1="200" x2="447" y2="200" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="453" y1="200" x2="460" y2="200" stroke="#8ab8d8" stroke-width="2.5" opacity="0.9"/>
+            <line x1="442" y1="192" x2="447" y2="196" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <line x1="453" y1="204" x2="458" y2="208" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <line x1="458" y1="192" x2="453" y2="196" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <line x1="447" y1="204" x2="442" y2="208" stroke="#8ab8d8" stroke-width="2" opacity="0.7"/>
+            <path d="M440 192 Q443 188 447 190 L445 196 Q441 196 439 193Z" fill="#1565c0" opacity="0.8"/>
+
+          </svg>
+
+          <div class="hero__cards animate-up delay-3">
+            <div class="hero__card">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="#2A7EC8" stroke-width="2"/></svg>
+              Гарантия на работы
+            </div>
+            <div class="hero__card">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#2A7EC8" stroke-width="2" stroke-linejoin="round"/></svg>
+              Оборудование BOSCH
+            </div>
+            <div class="hero__card">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2 Q18 5 18 11 L18 16 Q12 20 6 16 L6 11 Q6 5 12 2Z" stroke="#2A7EC8" stroke-width="2"/><path d="M9 11 L11 13 L15 9" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Нижний Тагил
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#services" class="hero__scroll">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Что мы делаем</span>
+        <h2 class="section__title">Наши услуги</h2>
+        <p class="section__subtitle">Выполняем весь спектр работ по ремонту и обслуживанию автомобилей</p>
+      </div>
+      <div class="services__grid">
+
+        <a href="services.html#diagnostics" class="service-card animate-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="#2A7EC8" stroke-width="2" opacity="0.3"/>
+              <path d="M14 24 Q14 14 24 14 Q34 14 34 24" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 24 L30 18" stroke="#e53935" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="3" fill="#2A7EC8"/>
+              <circle cx="24" cy="24" r="1.5" fill="white"/>
+              <rect x="22" y="32" width="4" height="2" rx="1" fill="#2A7EC8"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Диагностика двигателя</h3>
+          <p class="service-card__text">Компьютерная диагностика на оборудовании BOSCH. Быстро находим любые неисправности.</p>
+          <span class="service-card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#alignment" class="service-card animate-up delay-1">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="15" cy="34" r="9" stroke="#2A7EC8" stroke-width="2.5"/>
+              <circle cx="33" cy="34" r="9" stroke="#2A7EC8" stroke-width="2.5"/>
+              <circle cx="15" cy="34" r="3" fill="#2A7EC8"/>
+              <circle cx="33" cy="34" r="3" fill="#2A7EC8"/>
+              <path d="M15 25 L15 18 L33 18 L33 25" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 18 L38 18" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 18 L24 12" stroke="#e53935" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Сход-Развал 3D</h3>
+          <p class="service-card__text">3D-стенд BOSCH точно измеряет все углы установки колёс. Ваш автомобиль поедет ровно.</p>
+          <span class="service-card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#body" class="service-card animate-up delay-2">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 30 L8 26 Q10 20 16 17 L24 10 Q30 6 36 10 L40 17 Q46 20 46 26 L46 30" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 30 L46 30" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="16" cy="34" r="5" stroke="#2A7EC8" stroke-width="2.5"/>
+              <circle cx="38" cy="34" r="5" stroke="#2A7EC8" stroke-width="2.5"/>
+              <path d="M28 10 Q35 10 38 17 L38 30" stroke="#e53935" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Кузовной ремонт</h3>
+          <p class="service-card__text">Рихтовка, покраска, сварка на оборудовании Car-O-Liner. Восстановим геометрию кузова.</p>
+          <span class="service-card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#webasto" class="service-card animate-up delay-3">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8 Q30 14 30 22 Q30 30 24 34 Q18 30 18 22 Q18 14 24 8Z" stroke="#e53935" stroke-width="2" fill="#fee2e2" opacity="0.8"/>
+              <path d="M24 18 Q26 22 26 26 Q26 30 24 32 Q22 30 22 26 Q22 22 24 18Z" fill="#e53935" opacity="0.6"/>
+              <path d="M12 36 Q16 32 24 32 Q32 32 36 36" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 40 L40 40" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M14 38 L14 40 M20 38 L20 40 M28 38 L28 40 M34 38 L34 40" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Установка Webasto</h3>
+          <p class="service-card__text">Продажа, установка и обслуживание автономных отопителей и предпусковых подогревателей.</p>
+          <span class="service-card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#insurance" class="service-card animate-up delay-1">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6 L38 12 L38 26 Q38 36 24 42 Q10 36 10 26 L10 12 Z" stroke="#2A7EC8" stroke-width="2.5" fill="#EAF4FF"/>
+              <path d="M17 24 L22 29 L31 20" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Автострахование</h3>
+          <p class="service-card__text">ОСАГО, КАСКО — выгодные тарифы, большой выбор страховых компаний. Оформляем на месте.</p>
+          <span class="service-card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#inspection" class="service-card animate-up delay-2">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="8" width="28" height="36" rx="4" stroke="#2A7EC8" stroke-width="2.5" fill="#EAF4FF"/>
+              <path d="M16 18 L32 18 M16 24 L32 24 M16 30 L26 30" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="34" cy="34" r="6" fill="#EAF4FF" stroke="#2A7EC8" stroke-width="2"/>
+              <path d="M31 34 L33 36 L37 32" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Техосмотр</h3>
+          <p class="service-card__text">Прохождение технического осмотра. Быстро, без очередей, с выдачей диагностической карты.</p>
+          <span class="service-card__link">Подробнее →</span>
+        </a>
+
+      </div>
+      <div class="services__footer">
+        <a href="services.html" class="btn btn--primary">Все услуги и цены</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРЕИМУЩЕСТВА -->
+  <section class="why section">
+    <div class="container">
+      <div class="why__inner">
+        <div class="why__content">
+          <span class="section__label">Почему мы</span>
+          <h2 class="section__title">Доверие — главный<br/>результат нашей работы</h2>
+          <p class="why__text">
+            С 2009 года мы обслуживаем автомобили жителей Нижнего Тагила. За это время мы выработали стандарты качества, которые не позволяют нам делать работу плохо.
+          </p>
+          <div class="why__list">
+            <div class="why__item">
+              <div class="why__item-icon">
+                <svg viewBox="0 0 28 28" fill="none"><path d="M14 3 L17.5 10.5 L26 11.6 L20 17.4 L21.4 26 L14 22 L6.6 26 L8 17.4 L2 11.6 L10.5 10.5 Z" stroke="#2A7EC8" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Гарантия на все работы</strong>
+                <span>Мы уверены в качестве — поэтому даём письменную гарантию</span>
+              </div>
+            </div>
+            <div class="why__item">
+              <div class="why__item-icon">
+                <svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="11" stroke="#2A7EC8" stroke-width="1.8"/><path d="M14 8 L14 14 L18 17" stroke="#2A7EC8" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Работаем без выходных</strong>
+                <span>Ежедневно с 09:00 до 21:00. Юридическим лицам — круглосуточно</span>
+              </div>
+            </div>
+            <div class="why__item">
+              <div class="why__item-icon">
+                <svg viewBox="0 0 28 28" fill="none"><path d="M4 14 C4 8 8.5 4 14 4 C19.5 4 24 8 24 14" stroke="#2A7EC8" stroke-width="1.8" stroke-linecap="round"/><path d="M7 19 L14 24 L21 19" stroke="#2A7EC8" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="14" r="3" stroke="#2A7EC8" stroke-width="1.8"/></svg>
+              </div>
+              <div>
+                <strong>Оборудование BOSCH и Car-O-Liner</strong>
+                <span>Профессиональная техника мирового уровня для точных результатов</span>
+              </div>
+            </div>
+            <div class="why__item">
+              <div class="why__item-icon">
+                <svg viewBox="0 0 28 28" fill="none"><path d="M6 8 L14 4 L22 8 L22 18 Q22 23 14 26 Q6 23 6 18 Z" stroke="#2A7EC8" stroke-width="1.8"/><path d="M10 14 L13 17 L18 12" stroke="#2A7EC8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Оригинальные запчасти</strong>
+                <span>Большой склад запчастей. Редкие детали — под заказ с быстрой доставкой</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why__visual">
+          <div class="why__card-stack">
+            <div class="why__big-stat">
+              <span class="big-stat__num" data-count="15">0</span>
+              <span class="big-stat__unit">лет</span>
+              <span class="big-stat__label">на рынке</span>
+            </div>
+            <div class="why__brand-grid">
+              <div class="brand-item">Audi</div>
+              <div class="brand-item">BMW</div>
+              <div class="brand-item">Toyota</div>
+              <div class="brand-item">Ford</div>
+              <div class="brand-item">Volkswagen</div>
+              <div class="brand-item">Mercedes</div>
+              <div class="brand-item">Nissan</div>
+              <div class="brand-item">Opel</div>
+              <div class="brand-item">Lexus</div>
+            </div>
+            <p class="why__brands-label">И многие другие марки</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАК МЫ РАБОТАЕМ -->
+  <section class="process section">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Как это работает</span>
+        <h2 class="section__title">4 шага до готового<br/>автомобиля</h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step animate-up">
+          <div class="process__num">01</div>
+          <div class="process__icon">
+            <svg viewBox="0 0 44 44" fill="none"><path d="M22 6 C22 6 8 10 8 22 L8 32 L36 32 L36 22 C36 10 22 6 22 6Z" stroke="#2A7EC8" stroke-width="2" fill="#EAF4FF"/><path d="M16 32 L16 38 M28 32 L28 38" stroke="#2A7EC8" stroke-width="2" stroke-linecap="round"/><path d="M8 28 L36 28" stroke="#2A7EC8" stroke-width="2"/></svg>
+          </div>
+          <h3>Запись</h3>
+          <p>Позвоните или заполните форму на сайте — выберем удобное время</p>
+        </div>
+        <div class="process__arrow">→</div>
+        <div class="process__step animate-up delay-1">
+          <div class="process__num">02</div>
+          <div class="process__icon">
+            <svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="14" stroke="#2A7EC8" stroke-width="2" fill="#EAF4FF"/><path d="M22 22 L28 16" stroke="#e53935" stroke-width="2.5" stroke-linecap="round"/><circle cx="22" cy="22" r="3" fill="#2A7EC8"/><path d="M14 22 Q14 15 22 14" stroke="#2A7EC8" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/></svg>
+          </div>
+          <h3>Диагностика</h3>
+          <p>Проводим полную компьютерную диагностику и сообщаем стоимость работ</p>
+        </div>
+        <div class="process__arrow">→</div>
+        <div class="process__step animate-up delay-2">
+          <div class="process__num">03</div>
+          <div class="process__icon">
+            <svg viewBox="0 0 44 44" fill="none"><path d="M12 28 L16 20 L22 26 L28 14 L32 22" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><rect x="8" y="8" width="28" height="28" rx="4" stroke="#2A7EC8" stroke-width="2" fill="#EAF4FF"/><path d="M12 28 L16 20 L22 26 L28 14 L32 22" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </div>
+          <h3>Ремонт</h3>
+          <p>Опытные мастера выполняют работы в согласованные сроки на профессиональном оборудовании</p>
+        </div>
+        <div class="process__arrow">→</div>
+        <div class="process__step animate-up delay-3">
+          <div class="process__num">04</div>
+          <div class="process__icon">
+            <svg viewBox="0 0 44 44" fill="none"><path d="M8 22 C8 14 14 8 22 8 C30 8 36 14 36 22 C36 30 30 36 22 36 C14 36 8 30 8 22Z" stroke="#2A7EC8" stroke-width="2" fill="#EAF4FF"/><path d="M15 22 L20 27 L29 18" stroke="#2A7EC8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Выдача</h3>
+          <p>Принимаете работу, получаете гарантийные обязательства и едете с уверенностью</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="reviews section">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Отзывы</span>
+        <h2 class="section__title">Что говорят клиенты</h2>
+        <p class="section__subtitle">Реальные отзывы наших клиентов на Яндекс Картах</p>
+      </div>
+      <div class="yandex-widget-wrap animate-up">
+        <iframe
+          src="https://yandex.ru/maps-reviews-widget/76627251059?comments"
+          frameborder="0"
+          width="100%"
+          height="480"
+          allowfullscreen="true"
+          style="border-radius: 16px; border: 1px solid #d4e6f7; display: block;"
+          title="Отзывы об УралТехЦентр на Яндекс Картах"
+        ></iframe>
+        <a
+          href="https://yandex.com/maps/org/uraltekhtsentr/76627251059"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="yandex-widget-link"
+        >
+          УралТехЦентр на Яндекс Картах →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАПИСЬ НА РЕМОНТ -->
+  <section class="booking section" id="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <div class="booking__content">
+          <span class="section__label section__label--light">Запись</span>
+          <h2 class="booking__title">Запишитесь на ремонт онлайн</h2>
+          <p class="booking__subtitle">Оставьте заявку — мы перезвоним в течение 15 минут и подберём удобное время</p>
+          <div class="booking__contacts">
+            <p class="booking__contact-group-label">Для физических лиц:</p>
+            <a href="tel:+73435483512" class="booking__contact-item">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.2 14.4C14.5 14.1 14.9 14 15.3 14.2C16.5 14.6 17.8 14.8 19 14.8C19.6 14.8 20 15.2 20 15.8V19C20 19.6 19.6 20 19 20C10.2 20 3 12.8 3 4C3 3.4 3.4 3 4 3H7.2C7.8 3 8.2 3.4 8.2 4C8.2 5.2 8.4 6.5 8.8 7.7C8.9 8.1 8.8 8.5 8.5 8.8L6.6 10.8Z" stroke="#fff" stroke-width="2"/></svg>
+              8 (3435) 48-35-12
+            </a>
+            <a href="tel:+73435483513" class="booking__contact-item">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.2 14.4C14.5 14.1 14.9 14 15.3 14.2C16.5 14.6 17.8 14.8 19 14.8C19.6 14.8 20 15.2 20 15.8V19C20 19.6 19.6 20 19 20C10.2 20 3 12.8 3 4C3 3.4 3.4 3 4 3H7.2C7.8 3 8.2 3.4 8.2 4C8.2 5.2 8.4 6.5 8.8 7.7C8.9 8.1 8.8 8.5 8.5 8.8L6.6 10.8Z" stroke="#fff" stroke-width="2"/></svg>
+              8 (3435) 48-35-13
+            </a>
+            <div class="booking__contact-item booking__contact-item--text">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/><path d="M12 7 L12 12 L15 15" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+              Ежедневно 09:00–21:00
+            </div>
+            <p class="booking__contact-group-label" style="margin-top:16px;">Для юридических лиц:</p>
+            <a href="tel:+79222202292" class="booking__contact-item">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.2 14.4C14.5 14.1 14.9 14 15.3 14.2C16.5 14.6 17.8 14.8 19 14.8C19.6 14.8 20 15.2 20 15.8V19C20 19.6 19.6 20 19 20C10.2 20 3 12.8 3 4C3 3.4 3.4 3 4 3H7.2C7.8 3 8.2 3.4 8.2 4C8.2 5.2 8.4 6.5 8.8 7.7C8.9 8.1 8.8 8.5 8.5 8.8L6.6 10.8Z" stroke="#fff" stroke-width="2"/></svg>
+              8 (922) 220-22-92
+            </a>
+            <div class="booking__contact-item booking__contact-item--text">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/><path d="M12 7 L12 12 L15 15" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+              Круглосуточно
+            </div>
+            <p class="booking__contact-group-label" style="margin-top:16px;">Автоэвакуатор для юр. лиц:</p>
+            <a href="tel:+79222200455" class="booking__contact-item">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.2 14.4C14.5 14.1 14.9 14 15.3 14.2C16.5 14.6 17.8 14.8 19 14.8C19.6 14.8 20 15.2 20 15.8V19C20 19.6 19.6 20 19 20C10.2 20 3 12.8 3 4C3 3.4 3.4 3 4 3H7.2C7.8 3 8.2 3.4 8.2 4C8.2 5.2 8.4 6.5 8.8 7.7C8.9 8.1 8.8 8.5 8.5 8.8L6.6 10.8Z" stroke="#fff" stroke-width="2"/></svg>
+              8 (922) 220-04-55
+            </a>
+            <div class="booking__contact-item booking__contact-item--text">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/><path d="M12 7 L12 12 L15 15" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+              Круглосуточно
+            </div>
+          </div>
+        </div>
+        <div class="booking__form-wrap">
+          <form class="booking__form" id="bookingForm">
+            <h3 class="booking__form-title">Оставить заявку</h3>
+            <div class="form-group">
+              <label>Ваше имя</label>
+              <input type="text" placeholder="Иван Иванов" required />
+            </div>
+            <div class="form-group">
+              <label>Телефон</label>
+              <input type="tel" placeholder="+7 (___) ___-__-__" required />
+            </div>
+            <div class="form-group">
+              <label>Марка автомобиля</label>
+              <input type="text" placeholder="Toyota Camry 2018" />
+            </div>
+            <div class="form-group">
+              <label>Вид работ</label>
+              <select>
+                <option value="">Выберите услугу...</option>
+                <option>Диагностика двигателя</option>
+                <option>Диагностика ходовой части</option>
+                <option>Ремонт двигателя</option>
+                <option>Ремонт подвески и тормозов</option>
+                <option>Сход-развал 3D</option>
+                <option>Кузовной ремонт</option>
+                <option>Подбор автоэмали и покраска</option>
+                <option>Слесарные работы</option>
+                <option>Ремонт электрооборудования</option>
+                <option>Регулировка фар</option>
+                <option>Установка Webasto</option>
+                <option>Автострахование</option>
+                <option>Техосмотр</option>
+                <option>Автомойка</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Комментарий</label>
+              <textarea placeholder="Опишите проблему..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--white btn--full">Отправить заявку</button>
+            <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--footer">
+            <img src="images/logo.png" alt="УралТехЦентр" class="logo__img logo__img--footer" />
+          </a>
+          <p class="footer__desc">Профессиональный автосервис с 2009 года. Ремонт любых марок автомобилей.</p>
+        </div>
+        <div class="footer__nav">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="https://razbor66-nt.ru" target="_blank">Магазин запчастей</a></li>
+          </ul>
+        </div>
+        <div class="footer__services">
+          <h4>Услуги</h4>
+          <ul>
+            <li><a href="services.html#diagnostics">Диагностика</a></li>
+            <li><a href="services.html#alignment">Сход-развал</a></li>
+            <li><a href="services.html#body">Кузовной ремонт</a></li>
+            <li><a href="services.html#webasto">Webasto</a></li>
+            <li><a href="services.html#insurance">Страхование</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h4>Контакты</h4>
+          <p>📍 Нижний Тагил,<br/>ул. Циолковского, 4Б</p>
+          <p style="margin-top:12px; font-size:12px; opacity:0.6; text-transform:uppercase; letter-spacing:0.08em;">Физ. лица</p>
+          <p>📞 <a href="tel:+73435483512">8 (3435) 48-35-12</a></p>
+          <p>📞 <a href="tel:+73435483513">8 (3435) 48-35-13</a></p>
+          <p>🕐 Ежедневно 09:00–21:00</p>
+          <p style="margin-top:12px; font-size:12px; opacity:0.6; text-transform:uppercase; letter-spacing:0.08em;">Юр. лица</p>
+          <p>📞 <a href="tel:+79222202292">8 (922) 220-22-92</a></p>
+          <p>🕐 Ежедневно 09:00–21:00</p>
+          <p style="margin-top:12px; font-size:12px; opacity:0.6; text-transform:uppercase; letter-spacing:0.08em;">Автоэвакуатор (юр. лица)</p>
+          <p>📞 <a href="tel:+79222200455">8 (922) 220-04-55</a></p>
+          <p>🕐 Круглосуточно</p>
+          <p style="margin-top:12px;">✉️ <a href="mailto:info@utc-nt.ru">info@utc-nt.ru</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© УралТехЦентр, 2026. Все права защищены.</p>
+        <a href="privacy.html">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопка "наверх" -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- Всплывающее уведомление -->
+  <div class="toast" id="toast">Заявка отправлена! Перезвоним в течение 15 минут.</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
